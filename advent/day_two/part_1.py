@@ -18,6 +18,14 @@ class Game:
     rounds: list[Round]
 
 
+@dataclass
+class OptimalGame:
+    idNum: int
+    green: int
+    blue: int
+    red: int
+
+
 def countColor(colorCount: str) -> int:
     count = colorCount.strip()
     return int(count.split(" ")[0])
