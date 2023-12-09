@@ -16,3 +16,19 @@ mypy = "^1.7.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+strict_equality = true
+strict_concatenate = true
+
+# Strongly recommend enabling this one as soon as you can
+check_untyped_defs = true
+
+disallow_untyped_calls = false
+disallow_incomplete_defs = false
+disallow_untyped_defs = true
